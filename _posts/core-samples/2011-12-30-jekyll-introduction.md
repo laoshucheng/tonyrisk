@@ -2,7 +2,6 @@
 layout: post
 category : lessons
 tagline: "Supporting tagline"
-link: true
 tags : [intro, beginner, jekyll, tutorial]
 ---
 {% include JB/setup %}
