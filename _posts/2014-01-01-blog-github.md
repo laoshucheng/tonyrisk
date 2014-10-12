@@ -13,6 +13,8 @@ Pages允许用户可以使用github提供的[模板](https://help.github.com/art
 	2. 上传到github
 	3. 由github生成并托管整个网站
 
+<!--break-->
+
 ## 具体流程：
 
 1. 建立一个博客项目
@@ -148,3 +150,5 @@ Pages允许用户可以使用github提供的[模板](https://help.github.com/art
 
 		# 可以在github上自行寻找jeklly的主题
 		rake theme:install git="git://github.com/jekyllbootstrap/theme-mark-reid.git"
+
+----------- EOF ---------------

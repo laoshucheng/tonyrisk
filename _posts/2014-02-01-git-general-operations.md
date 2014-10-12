@@ -10,6 +10,7 @@ Git主分支的名字，默认叫做Master。它是自动建立的，版本库�
 - 暂存区(index): 通过add命令，临时保存的改动
 - Head: 指向最后一次提交(commit)的结果
 
+<!--break-->
 
 ## 安装
 Mac下直接下面命令（Mac用户强烈建议安装[homebrew](http://brew.sh/)和[brew cask](http://caskroom.io/)）
