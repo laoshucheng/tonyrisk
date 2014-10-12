@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ""
+title: "一个健康App想法"
 tags: []
 image:
   feature: posts.jpg
 ---
 
-# App Insanity
+# 一个健康App想法
 
-最近想做一个健康App，记录下想法。
+最近看到国外盛行民间塑身操：insanity，于是就想做一个健康App，记录下想法。
 
 ## 1. 基本资料收集
 - insanity概念

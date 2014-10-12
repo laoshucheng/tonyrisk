@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "学习新语言的基本流程"
 tags: []
 image:
   feature: posts.jpg
