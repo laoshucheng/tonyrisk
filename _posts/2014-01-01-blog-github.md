@@ -6,8 +6,6 @@ image:
   feature: posts.jpg
 ---
 
-#使用Github搭建个人博客
-
 ## 简单介绍
 在github上创建一个项目，会有一个默认的项目首页（一般就是显示文件列表和一个简单的README文件内容）。此外github也允许你自定义项目主页，所以有了[github pages](https://pages.github.com/)，它维护一些简单的静态页面。
 
