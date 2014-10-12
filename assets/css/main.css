@@ -169,7 +169,6 @@ textarea {
   a[href^="#"]:after {
     content: "";
   }
-  pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
@@ -369,46 +368,10 @@ blockquote {
 }
 
 tt,
-code,
 kbd,
 samp,
-pre {
+{
   font-family: monospace;
-}
-
-p code,
-li code {
-  padding: 0 5px;
-  margin: 0 2px;
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1.5;
-  white-space: nowrap;
-  background-color: #f2f2f2;
-  border: 1px solid #e6e6e6;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
-}
-
-pre {
-  overflow-x: auto;
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1.5;
-}
-
-pre::-webkit-scrollbar {
-  height: 12px;
-  background-color: #34362e;
-  border-radius: 0 0 4px 4px;
-}
-
-pre::-webkit-scrollbar-thumb:horizontal {
-  background-color: #6a6d5d;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
 }
 
 .highlight {
@@ -424,7 +387,7 @@ pre::-webkit-scrollbar-thumb:horizontal {
           border-radius: 3px;
 }
 
-.highlight pre {
+.highlight {
   position: relative;
   padding: 1em;
   margin: 0;
@@ -684,7 +647,7 @@ pre::-webkit-scrollbar-thumb:horizontal {
           border-radius: 3px;
 }
 
-.CodeRay .code pre {
+.CodeRay .code {
   padding: 1em;
   margin: 0;
   background-color: #272822;
