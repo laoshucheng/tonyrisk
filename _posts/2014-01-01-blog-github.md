@@ -1,3 +1,11 @@
+---
+layout: post
+title: ""
+tags: []
+image:
+  feature: posts.jpg
+---
+
 #使用Github搭建个人博客
 
 ## 简单介绍

@@ -1,3 +1,11 @@
+---
+layout: post
+title: ""
+tags: []
+image:
+  feature: posts.jpg
+---
+
 # Git 常用操作
 
 git 是一个**分布式**的版本控制工具，每个开发人员从git版本库check out的时候会在自己的机器上也克隆一个版本库。在没网络的情况下，也能提交文件，查看log，查看历史版本，创建分支等。

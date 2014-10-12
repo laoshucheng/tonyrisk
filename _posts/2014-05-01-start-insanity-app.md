@@ -1,3 +1,11 @@
+---
+layout: post
+title: ""
+tags: []
+image:
+  feature: posts.jpg
+---
+
 # App Insanity
 
 最近想做一个健康App，记录下想法。
