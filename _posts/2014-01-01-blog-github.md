@@ -37,8 +37,8 @@ Pages允许用户可以使用github提供的[模板](https://help.github.com/art
 
 3. 创建配置文件 _config.yml，并配置，如
 
-		baseurl: /blog (博客地址是 username.github.com/blog/)
-		baseurl: / (博客地址是 username.github.com)
+        baseurl: /blog (博客地址是 username.github.com/blog/)
+        baseurl: / (博客地址是 username.github.com)
 		
    更多配置：[查看这里](http://jekyllrb.com/docs/configuration/)
 
