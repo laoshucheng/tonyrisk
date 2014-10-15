@@ -13,9 +13,6 @@ image:
 - 具体内容有什么
 - 主要难点，或者用户痛点在什么地方（了解线下，线上现在是怎么做的）
 - 成功案例（微博，豆瓣上有晒帖）
-    <button type="button" class="btn btn-default btn-lg">
-      <span class="glyphicon glyphicon-star"></span> Star
-    </button>
 
 <!--break-->
 
