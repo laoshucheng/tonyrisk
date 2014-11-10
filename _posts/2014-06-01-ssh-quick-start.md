@@ -50,7 +50,7 @@ ssh是linux和MacOS操作系统的标配命令，而windows可以使用轻量级
 
 1. 生成公钥
 
-        $ssh-keygen -t rsa
+        $ssh-keygen -t rsa -C "your_email@example.com"
 
     这个命令会在 HOME/.ssh/ 文件夹下生成 **id_rsa.pub** 和 **id_rsa**。前者是你的公钥，后者是你的私钥。
 
