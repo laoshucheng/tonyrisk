@@ -145,7 +145,6 @@ Mac下直接下面命令（Mac用户强烈建议安装[homebrew](http://brew.sh/
 	git pull [远程主机名] [远程分支名]:[本地分支名]
 	
 ## 撤销回滚
-
 	# reset 命令是把当前分支指向另一个位置
 	# 把add的文件，撤销
 	git reset -- <filename>
@@ -167,7 +166,6 @@ Mac下直接下面命令（Mac用户强烈建议安装[homebrew](http://brew.sh/
 	例：git show d06b1cf09d2:text.txt > test1.txt
 	
 ## Diff
-
 	# 查看两个版本之间的区别
 	git diff version1 version2
 	
@@ -183,6 +181,16 @@ Mac下直接下面命令（Mac用户强烈建议安装[homebrew](http://brew.sh/
 	# 查看缓存区和工作目录之间的区别
 	git diff
 
+## 存储: 保存当前工作内容到git栈，然后回复到最新commit状态
+    # 存储
+    git stash
+    
+    # 恢复最新一次存储
+    git stash pop
+
+    # 查看现有所有存储的列表
+    git stash list
+
 ## 其他常用命令
 	# 查看本地库状态
 	git status [-s]
@@ -191,15 +199,70 @@ Mac下直接下面命令（Mac用户强烈建议安装[homebrew](http://brew.sh/
 	git add [-A]
 	
 	# 提交暂存区文件到本地库
-	git commit -m "msg"
-	
+	git commit -m "msg"	
 	# 等价于add，加commit操作：
-	git commit -am "msg"	
+	git commit -am "msg"
+
+    # 从缓存区中删除
+    git rm file_name
+    # 如果要在工作目录中留着该文件，可以使用
+    git rm --cached file_name
+
+    # 移动或者重命名缓存区中的文件
+    git mv old_file new_file
+
+    # 显示一个分支中提交的更改记录
+    git log
 	
 
-## 扩展
-[git-extras](https://github.com/visionmedia/git-extras)
+## 扩展和参考
 
-[一些操作图示](http://sfault-image.b0.upaiyun.com/37/92/37923f2478edc5709b36562b26c9e008)
+技术光是看书，如果没有实战完全不能深入理解的，最好的学习还是赶紧建立一个git库，然后在实战中学习吧。
+另外看其他人总结的经验和知识点也能少走不少弯路：
+
+- github的员工所著，豆瓣评分9.1的神书：
+
+    [pro git](http://iissnan.com/progit/)
+
+- pro git作者另一本，可看作pro git的补充版
+
+    [Git Community Book 中文版](http://gitbook.liuhui998.com/)
+
+- 《Git权威指南》
+
+    [中文官网](http://www.worldhello.net/gotgit/)
+
+- 《Git权威指南》作者蒋鑫有一本好作，讲关于git和github的:
+
+    [GotGitHub](http://www.worldhello.net/gotgithub/)
+
+- 个人觉得最简单易懂介绍git的：
+
+    [廖雪峰讲git](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+
+- 快速明白git内部构造：
+
+    [中文版](http://youngsterxyf.github.io/2013/09/28/learning-git-internals-by-example/)
+
+- 在公司内，怎么使用好git:
+
+    [英文版](http://www.nczonline.net/blog/2013/05/21/github-workflows-inside-of-a-company/)
+
+- 一个在线学习git的环境：
+
+    [入口](http://pcottle.github.io/learnGitBranching/)
+
+- git官方命令不够？没关系，牛人已经封装了更多git实用命令，总有一款适合你：
+
+    [去看看](https://github.com/visionmedia/git-extras)
+
+- 一张图让你上手git：
+
+    [点击查看大图](http://sfault-image.b0.upaiyun.com/37/92/37923f2478edc5709b36562b26c9e008)
+
+- 阳志平老师教你如何玩溜github
+
+    [开始玩](http://www.yangzhiping.com/tech/github.html)
+
 
 ----------- EOF ---------------

@@ -9,6 +9,8 @@ image:
 ## 简单介绍
 在github上创建一个项目，会有一个默认的项目首页（一般就是显示文件列表和一个简单的README文件内容）。此外github也允许你自定义项目主页，所以有了[github pages](https://pages.github.com/)，它维护一些简单的静态页面。
 
+    [一个快速学习使用git pages的网站](http://www.thinkful.com/learn/a-guide-to-using-github-pages/start/)
+
 Pages允许用户可以使用github提供的[模板](https://help.github.com/articles/creating-pages-with-the-automatic-generator)，也允许用户自己编写html页面后上传。github pages使用jekyll程序来搭建，上传后会由jekyll程序来处理生成页面。
 
 [jekyll](http://jekyllrb.com/)是一个静态站点生成器，根据网页源码生成静态文件，提供变量，模板，插件等功能。
