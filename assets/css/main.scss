@@ -1,0 +1,46 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+body{
+  background-color: #f8f8f8;
+}
+
+img{
+  width: 100%;
+}
+
+.container{
+  max-width: 800px;
+}
+
+.center{
+  text-align: center;
+}
+
+footer{
+  margin: 20px;
+}
+
+.article-box{
+  background-color: white;
+  box-shadow: 0px 0px,0px 6px 12px rgba(34,34,34,.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#page-footer{
+  width: 100%;
+}
+
+.short-content #page-footer{
+  position: absolute;
+  bottom: 0;
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "syntax-highlighting"
+;
