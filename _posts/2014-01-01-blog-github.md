@@ -7,9 +7,11 @@ image:
 ---
 
 ## 简单介绍
-在github上创建一个项目，会有一个默认的项目首页（一般就是显示文件列表和一个简单的README文件内容）。此外github也允许你自定义项目主页，所以有了[github pages](https://pages.github.com/)，它维护一些简单的静态页面。
+在github上创建一个项目，会有一个默认的项目首页（一般就是显示文件列表和一个简单的README文件内容）。
 
-    [一个快速学习使用git pages的网站](http://www.thinkful.com/learn/a-guide-to-using-github-pages/start/)
+此外github也允许你自定义项目主页，所以有了[github pages](https://pages.github.com/)，它维护一些简单的静态页面。
+
+[戳这里查看一个快速学习使用git pages的网站](http://www.thinkful.com/learn/a-guide-to-using-github-pages/start/)
 
 Pages允许用户可以使用github提供的[模板](https://help.github.com/articles/creating-pages-with-the-automatic-generator)，也允许用户自己编写html页面后上传。github pages使用jekyll程序来搭建，上传后会由jekyll程序来处理生成页面。
 
@@ -37,10 +39,13 @@ Pages允许用户可以使用github提供的[模板](https://help.github.com/art
 
 3. 创建配置文件 _config.yml，并配置，如
 
-        baseurl: /blog (博客地址是 username.github.com/blog/)
-        baseurl: / (博客地址是 username.github.com)
+        # 博客地址是 username.github.com/blog/
+        baseurl: /blog
+
+        # 域名
+        url: http://www.tonyrisk.info
 		
-   更多配置：[查看这里](http://jekyllrb.com/docs/configuration/)
+    更多配置：[查看这里](http://jekyllrb.com/docs/configuration/)
 
 4. 创建一个_layouts目录，用于存放模板文件
 
@@ -48,20 +53,22 @@ Pages允许用户可以使用github提供的[模板](https://help.github.com/art
 
 5. 在_layouts下创建default.html文件，作为Blog的默认模板，内容如下：
 
-		<!DOCTYPE html>
-		<html>
-			<head>
-				<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-				<title>{{ page.title }}</title>
-			</head>
-			<body>
-				{{ content }}
-			</body>
-		</html>
+    ``` html
+    <!DOCTYPE html>
+    <html>
+	    <head>
+		    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+            <title>{{"{{ page.title "}}}}</title>
+        </head>
+	    <body>
+		    {{"{{ content "}}}}
+        </body>
+    </html>
+    ```
 
-   `{{content}}` 表示文章内容，jekyll采用liquid模板语言
-   
-   更多变量：[查看这里](http://jekyllrb.com/docs/variables/)
+    `{{"{{content"}}}}` 表示文章内容，jekyll采用liquid模板语言
+
+    更多变量：[查看这里](http://jekyllrb.com/docs/variables/)
 
 6. 在项目根目录，创建一个_posts目录，用于存放博客文章
 
@@ -71,7 +78,7 @@ Pages允许用户可以使用github提供的[模板](https://help.github.com/art
 
 		YEAR-MONTH-DAY-title.MARKUP
 		
-   `MARKUP`可以是`md`(如果用markdown编写)，`html`(如果是html)，`textile`(如果是textile)
+    `MARKUP`可以是`md`(如果用markdown编写)，`html`(如果是html)，`textile`(如果是textile)
    
 	下面是一偏文章示例:
 	
@@ -83,15 +90,15 @@ Pages允许用户可以使用github提供的[模板](https://help.github.com/art
 		<p>我的第一篇文章</p>
 		<p>{{ page.date | date_to_string }}</p>
 
-   两条`---`中间的是yaml头，用来设置参数等。
-   
-   注意，三根短划线前面，是**不能有空格的!!**
-   
-   `layout`用来指明使用_layout文件夹下的哪个模板
-   
-   `title`如果不设置默认用文件名的title
-   
-   更多参数：[查看这里](http://jekyllrb.com/docs/frontmatter/)
+    两条`---`中间的是yaml头，用来设置参数等。
+    
+    注意，三根短划线前面，是**不能有空格的!!**
+    
+    `layout`用来指明使用_layout文件夹下的哪个模板
+    
+    `title`如果不设置默认用文件名的title
+    
+    更多参数：[查看这里](http://jekyllrb.com/docs/frontmatter/)
 
 8. 在根目录下创建首页：index.html(下面代码简单列出所有文章，你也可以自己编辑文件)
 
@@ -102,21 +109,23 @@ Pages允许用户可以使用github提供的[模板](https://help.github.com/art
 		<h2>{{ page.title }}</h2>
 		<p>最新文章</p>
 		<ul>
-			{% for post in site.posts %}
-			<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-			{% endfor %}
+			{{"{% for post in site.posts "}}%}
+			<li>{{"{{ post.date | date_to_string "}}}} <a href="{{"{{ site.baseurl "}}}}{{"{{ post.url "}}}}">{{"{{ post.title "}}}}</a></li>
+			{{"{% endfor "}}%}
 		</ul>
 
 9. 提交发布（提交到github后，一般十分钟后，页面生效）
 
 		$git add -A
 		$git commit -m "first post"
+        
 		# blog是在github上创建的项目
-		$git remote add origin https://github.com/username/blog.git 
+		$git remote add origin https://github.com/username/blog.git
+        
 		# 把本地gh-pages分支推送到origin主机的gh-pages分支上
 		$git push -u origin gh-pages
 
-	‘http://username.github.com/blog/’ (如果步骤3设置中`base_url=/blog`)这个地址就是博客地址
+	http://username.github.com/blog/ (如果步骤3设置中`base_url=/blog`)这个地址就是博客地址
 
 ## 绑定域名
 基本blog就搭建完成了，如果需要把站点域名换成自己的域名，也非常简单：

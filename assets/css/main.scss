@@ -1,46 +1,77 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 @charset "utf-8";
 
 body{
-  background-color: #f8f8f8;
+    background-color: #f8f8f8;
+}
+
+header .navbar-default{
+    background-color: #180404;
+}
+
+.navbar-default .navbar-brand{
+    color: #ffffff;
+}
+.navbar-default .navbar-brand:hover{
+    color: #B8B6B6;
+}
+.navbar-default .navbar-nav>li>a{
+   color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a:hover{
+   color: #B8B6B6;
 }
 
 img{
-  width: 100%;
+    width: 100%;
 }
 
 .container{
-  max-width: 800px;
+    max-width: 800px;
 }
 
 .center{
-  text-align: center;
+    text-align: center;
 }
 
 footer{
-  margin: 20px;
+    margin: 20px;
 }
 
 .article-box{
-  background-color: white;
-  box-shadow: 0px 0px,0px 6px 12px rgba(34,34,34,.1);
-  margin-bottom: 20px;
-  padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px,0px 6px 12px rgba(34,34,34,.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.post-title{
+    color: #2a6496;
+}
+
+.post-content{
+    @extend .article-box;
 }
 
 #page-footer{
-  width: 100%;
+    width: 100%;
 }
 
-.short-content #page-footer{
-  position: absolute;
-  bottom: 0;
+#page-content{
+    min-height: 450px;
+}
+
+#gotop{
+    display:none;
+    width:55px;
+    height:55px;
+    position:fixed;
+    right:50px;
+    bottom:50px;
+    background:url(/assets/images/gotop.png) no-repeat -70px 0px;    
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "syntax-highlighting"
-;
+@import "syntax-highlighting";

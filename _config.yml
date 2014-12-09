@@ -8,7 +8,7 @@ email: tonylau1987@gmail.com
 baseurl: "/"
 
 # 域名
-#url:              http://localhost:4000
+# url:              http://localhost:4000
 url:              http://www.tonyrisk.info
 
 # markdown 引擎

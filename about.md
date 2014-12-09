@@ -1,11 +1,29 @@
 ---
-layout: page
-title: About
+layout: about
+title: 关于我
 permalink: /about/
 ---
+##开博宣言
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+绝不发布包含色情，政治敏感，少儿不宜，影响家庭和睦，破环邻里关系的博文；
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+对于不足和错误，采取虚心接受，坚决不改的策略；
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+若心存不良者，无端谩骂者，请出门左拐，爱去哪去哪，谢绝进入；
+
+对于友好交流，正能量辩论者，请『别听我胡说』
+
+##回望过去
+鄙人，87年出生于深秋，感觉那年冬天来的比较早，而且应该比较冷，出生时估计我妈怕我着凉，紧紧的捂着我，导致目前体型和马云类似
+
+到开此博客（2013）时，已虚活26春秋，真是呜呼哀哉，白瞎了这几年。
+
+从事IT游戏业，搞页游，也接触过手游，目前离职创业搞电商
+
+从服务器程序员进入此行，写过c++，干过as，在linux下折腾过，也用php，ruby开发过等等，零零碎碎到现在，一朝顿悟，要有自己的站！
+
+曾经也在诸多地方开过博客，写过文章，但都没坚持下来，最后都沦入为在本地emacs上写文章。
+
+可能是天蝎与生俱来的不信任感吧，总感觉在别人的地方留下足迹，真是太不靠谱了，万一关了咋办？所以决心还是要在网上有属于自己的家啊～～
+
+因为年纪大了，记忆力不好使，这个站呢，打算放放自己的读书笔记啊，一些日志啊，一些对技术或者最近研究东西的心得啊，一些照片啥的，以后觉得有些东西或者配置还能查阅一下。

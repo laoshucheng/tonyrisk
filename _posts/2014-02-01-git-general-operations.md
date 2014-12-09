@@ -49,17 +49,17 @@ Mac下直接下面命令（Mac用户强烈建议安装[homebrew](http://brew.sh/
 		name = xxxx
 		email = xxx@xxx.com
 	[color]
-	#开启着色功能
+	    #开启着色功能
 		ui＝ true
 		status = auto
 		diff = auto
 		branch = auto
 		interactive = auto
 	[merge]
-	#默认 merge 都加上 --no-ff
+	    #默认 merge 都加上 --no-ff
 		ff = false
 	[alias]
-	#别名
+	    #别名
 		st = status
 		ci = "commit -m"
 		br = branch
@@ -80,9 +80,11 @@ Mac下直接下面命令（Mac用户强烈建议安装[homebrew](http://brew.sh/
 	touch README.md LICENSE .gitignore
 	git init								# 会在目录下建立.git文件夹
 	git add *								# 把所有文件都放入本地缓存区
-	git commit -m ‘first commit’		# 将更改记录成快照
+    git commit -m ‘first commit’		    # 将更改记录成快照
+    
 	# 还没有克隆现有仓库，并欲将本地仓库连接到某个远程服务器
 	git remote add origin https://github.com/xxxx/test.git
+    
 	# 把本地改动更新到远程仓库的master分支上去
 	git push -u origin master
 
@@ -220,49 +222,33 @@ Mac下直接下面命令（Mac用户强烈建议安装[homebrew](http://brew.sh/
 技术光是看书，如果没有实战完全不能深入理解的，最好的学习还是赶紧建立一个git库，然后在实战中学习吧。
 另外看其他人总结的经验和知识点也能少走不少弯路：
 
-- github的员工所著，豆瓣评分9.1的神书：
+- github的员工所著，豆瓣评分9.1的神书：[pro git](http://iissnan.com/progit/)
 
-    [pro git](http://iissnan.com/progit/)
+- pro git作者另一本，可看作pro git的补充版: [Git Community Book 中文版](http://gitbook.liuhui998.com/)
 
-- pro git作者另一本，可看作pro git的补充版
+- 《Git权威指南》:  [中文官网](http://www.worldhello.net/gotgit/)
 
-    [Git Community Book 中文版](http://gitbook.liuhui998.com/)
+- 《Git权威指南》作者蒋鑫有一本好作，讲关于git和github的: [GotGitHub](http://www.worldhello.net/gotgithub/)
 
-- 《Git权威指南》
+- 个人觉得最简单易懂介绍git的：[廖雪峰讲git](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
-    [中文官网](http://www.worldhello.net/gotgit/)
+- 快速明白git内部构造：[中文版](http://youngsterxyf.github.io/2013/09/28/learning-git-internals-by-example/)
 
-- 《Git权威指南》作者蒋鑫有一本好作，讲关于git和github的:
+- 在公司内，怎么使用好git: [英文版](http://www.nczonline.net/blog/2013/05/21/github-workflows-inside-of-a-company/)
 
-    [GotGitHub](http://www.worldhello.net/gotgithub/)
+- 在线学习git的环境：
 
-- 个人觉得最简单易懂介绍git的：
+    [branch教程](http://pcottle.github.io/learnGitBranching/)
+    
+    [code school和github联合推出的学习平台](https://try.github.io/levels/1/challenges/1)
 
-    [廖雪峰讲git](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+- git官方命令不够？没关系，牛人已经封装了更多git实用命令，总有一款适合你：[去看看](https://github.com/visionmedia/git-extras)
 
-- 快速明白git内部构造：
+- 一张图让你上手git：[点击查看大图](http://sfault-image.b0.upaiyun.com/37/92/37923f2478edc5709b36562b26c9e008)
 
-    [中文版](http://youngsterxyf.github.io/2013/09/28/learning-git-internals-by-example/)
+- 阳志平老师教你如何玩溜github: [开始玩](http://www.yangzhiping.com/tech/github.html)
 
-- 在公司内，怎么使用好git:
-
-    [英文版](http://www.nczonline.net/blog/2013/05/21/github-workflows-inside-of-a-company/)
-
-- 一个在线学习git的环境：
-
-    [入口](http://pcottle.github.io/learnGitBranching/)
-
-- git官方命令不够？没关系，牛人已经封装了更多git实用命令，总有一款适合你：
-
-    [去看看](https://github.com/visionmedia/git-extras)
-
-- 一张图让你上手git：
-
-    [点击查看大图](http://sfault-image.b0.upaiyun.com/37/92/37923f2478edc5709b36562b26c9e008)
-
-- 阳志平老师教你如何玩溜github
-
-    [开始玩](http://www.yangzhiping.com/tech/github.html)
+- GitHub和Git一些使用技巧：[在这](http://snowdream86.gitbooks.io/github-cheat-sheet/content/zh/index.html)
 
 
 ----------- EOF ---------------

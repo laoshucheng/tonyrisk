@@ -1,22 +1,22 @@
 ---
 ---
+go_top= ()->
+  $(window).scroll (e)->
+    # 若滚动条离顶部大于100元素
+    if $(window).scrollTop() > 100
+      $("#gotop").fadeIn(500)
+    else
+      $("#gotop").fadeOut(500)
 
-shortContent = ->
-  $('body').removeClass 'short-content'
+$("#gotop").click (e)->
+  # 以1秒的间隔返回顶部
+  $('body,html').animate {scrollTop:0}, 200
 
-  page_size = 0
-  page_size += $('#page-content').height() if $('#page-content').is(":visible")
-  page_size += $('#page-footer').height() if $('#page-footer').is(":visible")
-  page_size += $('#page-header').height() if $('#page-header').is(":visible")
+$("#gotop").mouseover (e)->
+  $(this).css("background","url(/assets/images/gotop.png) no-repeat 0px 0px")
 
-  if $(window).height() > page_size
-    $('body').addClass 'short-content'
+$("#gotop").mouseout (e)->
+  $(this).css("background","url(/assets/images/gotop.png) no-repeat -70px 0px")
 
-$(window).resize ()->
-  shortContent()
-
-$('#page-content').bind "heightChange", ()->
-  shortContent()
-  
 $(document).ready ()->
-  shortContent()
+  go_top()
