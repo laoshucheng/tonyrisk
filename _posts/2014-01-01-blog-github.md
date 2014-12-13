@@ -44,6 +44,12 @@ Pages允许用户可以使用github提供的[模板](https://help.github.com/art
 
         # 域名
         url: http://www.tonyrisk.info
+
+        # 把 markdown 解释器设置为 redcarpet，并做一些扩展配置
+        # gem install redcarpet 来安装 redcarpet
+        markdown: redcarpet
+        redcarpet:
+            extensions: ["with_toc_data", "strikethrough", "fenced_code_blocks", "highlight", "underline", "smart", "tables", "no_intra_emphasis", "autolink"]
 		
     更多配置：[查看这里](http://jekyllrb.com/docs/configuration/)
 

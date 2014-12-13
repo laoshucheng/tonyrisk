@@ -8,14 +8,14 @@ email: tonylau1987@gmail.com
 baseurl: "/"
 
 # 域名
-# url:              http://localhost:4000
+#url:              http://localhost:4000
 url:              http://www.tonyrisk.info
 
 # markdown 引擎
 #markdown: kramdown
-markdown: Redcarpet
+markdown: redcarpet
 redcarpet:
-  extensions: ["fenced_code_blocks", "smart", "tables", "no_intra_emphasis", "autolink"]
+  extensions: ["with_toc_data", "strikethrough", "fenced_code_blocks", "highlight", "underline", "smart", "tables", "no_intra_emphasis", "autolink"]
 
 # 代码http://pygments.org/ 或者 https://github.com/jneen/rouge
 highlighter: pygments
