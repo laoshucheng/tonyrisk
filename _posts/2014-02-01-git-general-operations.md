@@ -97,8 +97,11 @@ Mac下直接下面命令（Mac用户强烈建议安装[homebrew](http://brew.sh/
 	git clone -b branch-name git@github.com:user/myproject.git 
 
 ## 分支操作
-	# 查看分支
+	# 查看本地分支
 	git branch
+    
+	# 查看远程分支
+	git branch -r
 	
 	# 建立分支
 	git branch branch-name
