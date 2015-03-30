@@ -111,6 +111,9 @@ Mac下直接下面命令（Mac用户强烈建议安装[homebrew](http://brew.sh/
 	
 	# 建立并切换分支
 	git checkout -b branch-name [from_branch]
+
+	# 建立/提交 远程分支(注意和下面删除远程分支区别)
+    git push [远程主机名] [分支名]
 	
 	# 删除分支
 	git branch -d branch-name
